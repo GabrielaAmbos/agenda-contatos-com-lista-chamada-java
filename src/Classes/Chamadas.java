@@ -21,4 +21,20 @@ public class Chamadas {
     public List<Contato> exibirChamadas () {
         return contatos;
     }
+
+    public void atualizaContato (Contato contato) {
+        for(int i = 0; i < contatos.size(); i++) {
+            if(contatos.get(i).getNumero().equals(contato.getNumero())) {
+                contatos.get(i).setNome(contato.getNome());
+            }
+        }
+    }
+
+    public void removeContato (Contato contato) {
+        for(int i = 0; i < contatos.size(); i++) {
+            if(contatos.get(i).getNumero().equals(contato.getNumero())) {
+                contatos.get(i).setNome(contato.getNumero());
+            }
+        }
+    }
 }
